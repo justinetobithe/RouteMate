@@ -57,7 +57,7 @@ export default function BookingList() {
             <Text style={styles.welcomeText}>My Bookings</Text>
             {loading ? (
                 <Center style={{ marginTop: 20 }}>
-                    <Spinner color="#080E2C" size="lg" />
+                    <Spinner color="#D02620" size="lg" />
                 </Center>
             ) : bookings.length === 0 ? (
                 <Text style={{ textAlign: 'center', marginTop: 20 }}>No bookings found</Text>
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     welcomeText: {
         fontSize: 24,
         fontWeight: 'bold',
-        color: '#080E2C',
+        color: '#D02620',
         textAlign: 'center',
         marginBottom: 20,
     },

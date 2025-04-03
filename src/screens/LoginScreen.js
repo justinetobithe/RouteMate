@@ -1,12 +1,10 @@
-Cimport React from 'react';
+import React from 'react';
 import { View, ScrollView, Image, StyleSheet } from 'react-native';
 import { Text, Input, Center, Stack, Box, FormControl, Link, Button } from 'native-base';
 import { useForm, Controller } from 'react-hook-form';
 import NetInfo from '@react-native-community/netinfo';
 import useAuthStore from '../store/authStore';
 import Toast from '../components/Toast';
-import { sendLocalNotification } from '../core/NotificationService';
-import PushNotification from 'react-native-push-notification';
 
 export default function LoginScreen({ navigation }) {
     const { control, handleSubmit, formState: { errors }, reset } = useForm({
@@ -26,24 +24,6 @@ export default function LoginScreen({ navigation }) {
 
             login(data.email, data.password, showToast);
         }
-    };
-
-    const greetUser = () => {
-        sendLocalNotification("This is a test notification!")
-
-        // PushNotification.createChannel(
-        //     {
-        //         channelId: '3',
-        //         channelName: 'name',
-        //     },
-        //     created => console.log(`createChannel returned '${created}'`),
-        // );
-
-        // PushNotification.localNotification({
-        //     title: 'NEW Message - ANDROID',
-        //     message: "test",
-        //     channelId: '3',
-        // });
     };
 
     return (
@@ -116,7 +96,7 @@ export default function LoginScreen({ navigation }) {
                     <Button
                         onPress={handleSubmit(onLogin)}
                         variant="solid"
-                        backgroundColor="#080E2C"
+                        backgroundColor="#D02620"
                         isLoading={isLoading}
                         style={styles.buttonLogin}
                     >
@@ -129,26 +109,11 @@ export default function LoginScreen({ navigation }) {
                         <Text style={styles.orText}>or</Text>
                         <View style={styles.line} />
                     </View>
-                    {/* 
-                    <Button variant="outline" width="100%" onPress={() => showToast("Available soon!", "info")}>
-                        <View style={styles.googleButton}>
-                            <Image source={require('../assets/img/google.png')} style={styles.googleIcon} />
-                            <Text>Login with Google</Text>
-                        </View>
-                    </Button> */}
 
                     <Link onPress={() => navigation.navigate('Register')} style={styles.registerLink}>
                         Create an account
                     </Link>
 
-                    {/* <Button
-                        onPress={greetUser}  // Calls the function to send the notification
-                        variant="solid"
-                        backgroundColor="#34b7f1"
-                        style={styles.buttonGreeting}
-                    >
-                        Send Greeting Notification
-                    </Button> */}
                 </Stack>
             </Box>
         </ScrollView>

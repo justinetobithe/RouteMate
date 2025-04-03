@@ -321,7 +321,7 @@ export default function RegisterScreen({ navigation }) {
                         <Button
                             isLoading={isLoading}
                             onPress={handleSubmit(onSubmit)}
-                            backgroundColor="#080E2C"
+                            backgroundColor="#D02620"
                             style={styles.buttonRegister}
                         >
                             {isLoading ? (

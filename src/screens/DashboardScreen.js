@@ -127,7 +127,7 @@ export default function DashboardScreen() {
 
             {loading ? (
                 <Center style={{ marginTop: 20 }}>
-                    <Spinner color="#080E2C" size="lg" />
+                    <Spinner color="#D02620" size="lg" />
                 </Center>
             ) : sectionedTrips.length == 0 ? (
                 <Text style={{ textAlign: 'center', marginTop: 20 }}>No trips found</Text>
@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
     welcomeText: {
         fontSize: 26,
         fontWeight: 'bold',
-        color: '#080E2C',
+        color: '#D02620',
         textAlign: 'center',
         marginBottom: 20,
         textShadowColor: '#aaa',

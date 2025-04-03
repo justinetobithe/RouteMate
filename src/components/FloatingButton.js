@@ -11,7 +11,7 @@ const FloatingButton = ({ onPress }) => {
             size="sm"
             icon={<Ionicons name="add" size={22} color={"#ffffff"} />}
             onPress={onPress}
-            bg="#080E2C"
+            bg="#D02620"
         />
     );
 };

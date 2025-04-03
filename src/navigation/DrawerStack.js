@@ -25,7 +25,7 @@ export default function DrawerStack({ navigation }) {
             drawerContent={props => <AppDrawer {...props} />}
             initialRouteName="Home"
             screenOptions={{
-                drawerActiveBackgroundColor: '#080E2C',
+                drawerActiveBackgroundColor: '#D02620',
                 drawerActiveTintColor: '#fff',
                 drawerInactiveTintColor: '#333',
                 drawerLabelStyle: {
@@ -43,7 +43,7 @@ export default function DrawerStack({ navigation }) {
                         <Ionicons name="home-outline" size={22} color={color} />
                     ),
                     headerStyle: {
-                        backgroundColor: '#080E2C',
+                        backgroundColor: '#D02620',
                     },
                     headerTitleStyle: {
                         color: '#fff',
@@ -70,7 +70,7 @@ export default function DrawerStack({ navigation }) {
                                 <MaterialCommunityIcons name="book-account" size={22} color={color} />
                             ),
                             headerStyle: {
-                                backgroundColor: '#080E2C',
+                                backgroundColor: '#D02620',
                             },
                             headerTitleStyle: {
                                 color: '#fff',

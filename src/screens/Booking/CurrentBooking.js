@@ -15,23 +15,23 @@ const customStyles = {
     currentStepIndicatorSize: 40,
     separatorStrokeWidth: 2,
     currentStepStrokeWidth: 3,
-    stepStrokeCurrentColor: '#080E2C',
+    stepStrokeCurrentColor: '#D02620',
     stepStrokeWidth: 3,
-    stepStrokeFinishedColor: '#080E2C',
+    stepStrokeFinishedColor: '#D02620',
     stepStrokeUnFinishedColor: '#aaaaaa',
-    separatorFinishedColor: '#080E2C',
+    separatorFinishedColor: '#D02620',
     separatorUnFinishedColor: '#aaaaaa',
-    stepIndicatorFinishedColor: '#080E2C',
+    stepIndicatorFinishedColor: '#D02620',
     stepIndicatorUnFinishedColor: '#ffffff',
     stepIndicatorCurrentColor: '#ffffff',
     stepIndicatorLabelFontSize: 13,
     currentStepIndicatorLabelFontSize: 13,
-    stepIndicatorLabelCurrentColor: '#080E2C',
+    stepIndicatorLabelCurrentColor: '#D02620',
     stepIndicatorLabelFinishedColor: '#ffffff',
     stepIndicatorLabelUnFinishedColor: '#aaaaaa',
     labelColor: '#999999',
     labelSize: 13,
-    currentStepLabelColor: '#080E2C'
+    currentStepLabelColor: '#D02620'
 }
 
 export default function CurrentBooking() {
@@ -135,7 +135,7 @@ export default function CurrentBooking() {
         <>
             {loading ? (
                 <View style={styles.loadingContainer}>
-                    <Spinner color="#080E2C" size="lg" />
+                    <Spinner color="#D02620" size="lg" />
                 </View>
             ) : (
                 <View style={styles.container}>
@@ -254,7 +254,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     },
     touchableOpacity: {
-        backgroundColor: '#080E2C',
+        backgroundColor: '#D02620',
         borderRadius: 8,
         paddingVertical: 10,
         paddingHorizontal: 20,
@@ -276,6 +276,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 20,
         textAlign: 'center',
-        color: "#080E2C"
+        color: "#D02620"
     },
 });

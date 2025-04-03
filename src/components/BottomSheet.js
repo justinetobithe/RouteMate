@@ -16,23 +16,23 @@ const customStyles = {
     currentStepIndicatorSize: 40,
     separatorStrokeWidth: 2,
     currentStepStrokeWidth: 3,
-    stepStrokeCurrentColor: '#080E2C',
+    stepStrokeCurrentColor: '#D02620',
     stepStrokeWidth: 3,
-    stepStrokeFinishedColor: '#080E2C',
+    stepStrokeFinishedColor: '#D02620',
     stepStrokeUnFinishedColor: '#aaaaaa',
-    separatorFinishedColor: '#080E2C',
+    separatorFinishedColor: '#D02620',
     separatorUnFinishedColor: '#aaaaaa',
-    stepIndicatorFinishedColor: '#080E2C',
+    stepIndicatorFinishedColor: '#D02620',
     stepIndicatorUnFinishedColor: '#ffffff',
     stepIndicatorCurrentColor: '#ffffff',
     stepIndicatorLabelFontSize: 13,
     currentStepIndicatorLabelFontSize: 13,
-    stepIndicatorLabelCurrentColor: '#080E2C',
+    stepIndicatorLabelCurrentColor: '#D02620',
     stepIndicatorLabelFinishedColor: '#ffffff',
     stepIndicatorLabelUnFinishedColor: '#aaaaaa',
     labelColor: '#999999',
     labelSize: 13,
-    currentStepLabelColor: '#080E2C'
+    currentStepLabelColor: '#D02620'
 }
 
 
@@ -223,7 +223,7 @@ const BottomSheet = ({ visible, toggleVisibility, setPolylineCoordinates, setCur
                         <Button
                             onPress={handleDropOff}
                             variant="solid"
-                            backgroundColor="#080E2C"
+                            backgroundColor="#D02620"
                             style={styles.bookButton}
                         >
                             Drop Off
@@ -277,7 +277,7 @@ const BottomSheet = ({ visible, toggleVisibility, setPolylineCoordinates, setCur
                         <Button
                             onPress={handleSelect}
                             variant="solid"
-                            backgroundColor="#080E2C"
+                            backgroundColor="#D02620"
                             style={styles.bookButton}
                         >
                             Select
@@ -317,7 +317,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff',
     },
     clearButtonText: {
-        color: '#080E2C',
+        color: '#D02620',
     },
     label: {
         fontSize: 16,
@@ -335,7 +335,7 @@ const styles = StyleSheet.create({
     verticalLine: {
         width: 2,
         height: 40,
-        backgroundColor: '#080E2C',
+        backgroundColor: '#D02620',
         marginRight: 10,
     },
     terminalText: {

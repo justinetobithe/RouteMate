@@ -202,7 +202,7 @@ export default function AddTrip({ navigation }) {
                                         isReadOnly
                                         onChangeText={(text) => setDate(text)}
                                         InputRightElement={(
-                                            <Button size="xs" rounded="none" backgroundColor="#080E2C" w="1/6" h="full" onPress={showDatePicker} title="Date" style={{ color: "#fff" }} />
+                                            <Button size="xs" rounded="none" backgroundColor="#D02620" w="1/6" h="full" onPress={showDatePicker} title="Date" style={{ color: "#fff" }} />
                                         )}
                                     />
                                 </Box>
@@ -271,7 +271,7 @@ export default function AddTrip({ navigation }) {
                                 isLoading={isLoading}
                                 onPress={handleSubmit(onSubmit)}
                                 mt={4}
-                                backgroundColor="#080E2C"
+                                backgroundColor="#D02620"
                             >
                                 Add Trip
                             </Button>

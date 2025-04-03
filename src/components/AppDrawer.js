@@ -28,7 +28,7 @@ const AppDrawer = props => {
         <View style={{ flex: 1 }}>
             <DrawerContentScrollView
                 {...props}
-                contentContainerStyle={{ backgroundColor: '#080E2C' }}>
+                contentContainerStyle={{ backgroundColor: '#D02620' }}>
                 <ImageBackground
                     source={require('../assets/img/menu-bg.png')}
                     style={{ padding: 20 }}>

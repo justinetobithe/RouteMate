@@ -7,11 +7,11 @@ export default function Button({ variant, style, ...props }) {
         <NativeBaseButton
             variant={variant === 'outlined' ? 'outline' : 'solid'}
             style={[styles.button, style]}
-            backgroundColor={variant === 'solid' ? '#080E2C' : 'transparent'}
-            borderColor={variant === 'outlined' ? '#080E2C' : 'transparent'}
+            backgroundColor={variant === 'solid' ? '#D02620' : 'transparent'}
+            borderColor={variant === 'outlined' ? '#D02620' : 'transparent'}
             _text={{
                 ...styles.text,
-                color: variant === 'outlined' ? '#080E2C' : '#fff',
+                color: variant === 'outlined' ? '#D02620' : '#fff',
             }}
             {...props}
         >

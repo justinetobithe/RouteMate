@@ -37,7 +37,7 @@ export default function AuthStack() {
                         <Ionicons name="book-outline" size={22} color={color} />
                     ),
                     headerStyle: {
-                        backgroundColor: "#080E2C",
+                        backgroundColor: "#D02620",
                     },
                     headerTitleStyle: {
                         color: '#fff',
@@ -55,7 +55,7 @@ export default function AuthStack() {
                         <Ionicons name="book-outline" size={22} color={color} />
                     ),
                     headerStyle: {
-                        backgroundColor: "#080E2C",
+                        backgroundColor: "#D02620",
                     },
                     headerTitleStyle: {
                         color: '#fff',
@@ -73,7 +73,7 @@ export default function AuthStack() {
                         <Ionicons name="book-outline" size={22} color={color} />
                     ),
                     headerStyle: {
-                        backgroundColor: "#080E2C",
+                        backgroundColor: "#D02620",
                     },
                     headerTitleStyle: {
                         color: '#fff',
@@ -92,7 +92,7 @@ export default function AuthStack() {
                         <Ionicons name="book-outline" size={22} color={color} />
                     ),
                     headerStyle: {
-                        backgroundColor: "#080E2C",
+                        backgroundColor: "#D02620",
                     },
                     headerTitleStyle: {
                         color: '#fff',
@@ -111,7 +111,7 @@ export default function AuthStack() {
                         <Ionicons name="book-outline" size={22} color={color} />
                     ),
                     headerStyle: {
-                        backgroundColor: "#080E2C",
+                        backgroundColor: "#D02620",
                     },
                     headerTitleStyle: {
                         color: '#fff',
@@ -129,7 +129,7 @@ export default function AuthStack() {
                         <Ionicons name="book-outline" size={22} color={color} />
                     ),
                     headerStyle: {
-                        backgroundColor: "#080E2C",
+                        backgroundColor: "#D02620",
                     },
                     headerTitleStyle: {
                         color: '#fff',
@@ -146,7 +146,7 @@ export default function AuthStack() {
                         <Ionicons name="book-outline" size={22} color={color} />
                     ),
                     headerStyle: {
-                        backgroundColor: "#080E2C",
+                        backgroundColor: "#D02620",
                     },
                     headerTitleStyle: {
                         color: '#fff',

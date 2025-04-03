@@ -157,7 +157,7 @@ export default function Booking({ route, navigation }) {
                                 isLoading={isLoading}
                                 onPress={handleSubmit(onSubmit)}
                                 variant="solid"
-                                backgroundColor="#080E2C"
+                                backgroundColor="#D02620"
                                 style={styles.confirmButton}
                             >
                                 Confirm Booking
