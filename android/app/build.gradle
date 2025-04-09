@@ -82,6 +82,7 @@ project.ext.react = [
     enableHermes: true,  // clean and rebuild if changing
 ]
 
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 apply from: "../../node_modules/react-native/react.gradle"
 
 /**
@@ -161,6 +162,13 @@ android {
         }
     }
 
+    packagingOptions {
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+        pickFirst 'lib/x86_64/libc++_shared.so'
+        pickFirst 'lib/x86/libc++_shared.so'
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+    }
+
     if (isNewArchitectureEnabled()) {
         // We configure the NDK build only if you decide to opt-in for the New Architecture.
         externalNativeBuild {
@@ -211,6 +219,14 @@ android {
         }
     }
     signingConfigs {
+        release {
+            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
+                storeFile file(MYAPP_UPLOAD_STORE_FILE)
+                storePassword MYAPP_UPLOAD_STORE_PASSWORD
+                keyAlias MYAPP_UPLOAD_KEY_ALIAS
+                keyPassword MYAPP_UPLOAD_KEY_PASSWORD
+            }
+        }
         debug {
             storeFile file('debug.keystore')
             storePassword 'android'
@@ -225,9 +241,10 @@ android {
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
-            minifyEnabled enableProguardInReleaseBuilds
+            // signingConfig signingConfigs.debug
+            // minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release 
         }
     }
 
@@ -253,6 +270,11 @@ dependencies {
 
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation project(':react-native-vector-icons')  
+    implementation project(':react-native-svg')
+
+    implementation 'com.mapbox.maps:android:10.18.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-turf:6.11.0'
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
@@ -302,6 +324,10 @@ task copyDownloadableDepsToLibs(type: Copy) {
     into 'libs'
 }
 
+configurations.all {
+    exclude group: 'com.google.errorprone', module: 'error_prone_annotations'
+}
+ 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
 
 def isNewArchitectureEnabled() {
